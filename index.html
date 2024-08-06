@@ -2,117 +2,370 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Melanie's Portfolio</title>
+
+    <!-- Preconnect Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel/dist/css/bulma-carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://kit.fontawesome.com/8eec5f0344.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
+
 <body>
-    <!-- <div class="section-div" id="name-div">
+    <section class="section-name" id="name-div">
         <h1 class="title">Melanie Sanabria</h1>
-        <h2 class="profession">Software Developer</h2>
-    </div>
+        <h2 class="subtitle is-2">Software Developer</h2>
+    </section>
+    <section class="sectionA">
+        <div class="container about-me">
+            <div class="container columns">
+                <div class="column is-two-fifths about-me-photo">
+                    <img src="images/MelanieAboutMe.jpg">
 
-    <div class="background">
-        <div class="section-div" id="projects-div">
-            <h1>Projects</h1>
-            <div class="projects-galery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="project-cell">
-                    <h1>Minesweeper</h1>
-                    <p>Game with basic recursion logic</p>
-                    <img src="images/Minesweeper.jpg" alt="Minesweeper Game">
                 </div>
-                <div class="project-cell">
-                    <h1>project 2</h1>
+                <div class="column about-me-text">
+                    <h1 class="title is-1">About Me</h1>
+                    <div class="about-me-p">
+                        <p class="subtitle">I am a dedicated and enthusiastic professional transitioning into software engineering, with
+                            a
+                            strong
+                            background in hospitality. Through my experience in travel agency wholesaling dealing with
+                            suppliers and
+                            in customer service as a hotel receptionist, I have developed my problem solving skills, my
+                            attention to
+                            detail and my ability to perform in dynamic environments.</p>
+                        <p class="subtitle">What I am most passionate about in software engineering is the challenge of solving problems
+                            and
+                            creating
+                            innovative solutions. My last course in software engineering has provided me with a solid
+                            foundation in
+                            javascript programming. I am passionate about leveraging my skills to develop efficient
+                            software
+                            solutions.</p>
+                        <p class="subtitle">I am eager to bring my varied experience and newly acquired technical knowledge to a dynamic
+                            team
+                            where I
+                            can contribute to meaningful projects and continue to grow as a software engineer.</p>
+                    </div>
                 </div>
-                <div class="project-cell">
-                    <h1>project 3</h1>
+            </div>
+        </div>
+    </section>
+    <section class="sectionB">
+        <div class="container">
+            <h1 class="title is-1">Projects</h1>
+
+            <div class="gallery js-flickity" data-flickity='{ "wrapAround": true }'>
+                <div class="gallery-cell container">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <div class="project-image">
+                            <a href="https://melaniemsc.github.io/Minesweeper/">
+                                <img src="images/Minesweeper.jpg">
+                            </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <a class="subtitle is-3" href="https://melaniemsc.github.io/Minesweeper/">Minesweeper</a>
+                            <h2 class="subtitle is-4">Bootcamp Project 1</h2>
+                            <h3 class="subtitle is-5">1 week, Solo</h3>
+                            <a class="subtitle is-5" href="https://github.com/Melaniemsc/Minesweeper/blob/main/README.md">Readme</a>
+                            <p class="subtitle is-6">Grid-game that contains a recursive function to discover squares, has 3 levels of play and flags to mark a mine.</p>
+                            <h2 class="subtitle is-6">Tech Stack:</h2>
+                            <div class="project-icons has-text-centered">
+                                <i class="devicon-html5-plain iconA"></i>
+                                <i class="devicon-javascript-plain iconB"></i>
+                                <i class="devicon-css3-plain iconA"></i>
+                                <i class="devicon-github-original iconB"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-cell">
-                    <h1>project 4</h1>
+                <div class="gallery-cell container">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <div class="project-image">
+                                <a href="https://mediatrackermel.netlify.app/">
+                                <img src="images/MediaTracker.png">
+                            </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <a class="subtitle is-3" href="https://mediatrackermel.netlify.app/">Mediatracker</a>
+                            <h2 class="subtitle is-4">Bootcamp Project 2</h2>
+                            <h3 class="subtitle is-5">1 week, Solo</h3>
+                            <a class="subtitle is-5" href="https://github.com/Melaniemsc/MediaTracker/blob/main/README.md">Readme</a>
+
+                            <p class="subtitle is-6">Keep track of the books, movies and in the future series and songs you like as long as you have an account, app with full CRUD functionality.</p>
+                            <h2 class="subtitle is-6">Tech Stack:</h2>
+                            <div class="project-icons has-text-centered">
+                                <i class="devicon-express-original iconA"></i>
+                                <i class="devicon-javascript-plain iconB"></i>
+                                <i class="devicon-mongodb-plain iconA"></i>
+                                <i class="devicon-axios-plain-wordmark iconB"></i>
+                                <i class="devicon-nodejs-plain iconA"></i>
+                                <i class="devicon-css3-plain iconB"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-cell container">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <div class="project-image">
+                                <a href="https://mythopedia-f-by-k-m.netlify.app/">
+                                    <img src="images/Mythopedia.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <a class="subtitle is-3" href="https://mythopedia-f-by-k-m.netlify.app/">Mythopedia</a>
+                            <h2 class="subtitle is-4">Bootcamp Project 3</h2>
+                            <h3 class="subtitle is-5">1 week, Pairs</h3>
+                            <a class="subtitle is-5"
+                                href="https://github.com/Melaniemsc/mythopedia-frontend/blob/main/README.md">Readme</a>
+
+                            <p class="subtitle is-6">Pair project that shows characters from Greek mythology, if
+                                registered it enables a mini-game where you can choose your team and fight against some
+                                monsters.
+                            </p>
+                            <h3 class="subtitle is-6">Tech Stack:</h2>
+                            <div class="project-icons has-text-centered">
+                                <i class="devicon-mongodb-plain iconA"></i>
+                                <i class="devicon-express-original iconB"></i>
+                                <i class="devicon-react-original iconA"></i>
+                                <i class="devicon-nodejs-plain iconB"></i>
+                                <i class="devicon-javascript-plain iconA"></i>
+                                <i class="devicon-html5-plain iconB"></i>
+                                <i class="devicon-css3-plain iconA"></i>
+                                <i class="devicon-bulma-plain iconB"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-cell container">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <div class="project-image">
+                                <a href="https://myvisacheck.netlify.app/">
+                                    <img src="images/MyVisaCheck.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <a class="subtitle is-3" href="https://myvisacheck.netlify.app/">My Visa Check</a>
+                            <h2 class="subtitle is-4">Bootcamp Project 4</h2>
+                            <h3 class="subtitle is-5">1 week, Solo</h3>
+                            <a class="subtitle is-5"
+                                href="https://github.com/Melaniemsc/MyVisaCheck-Front/blob/main/README.md">Readme</a>
+
+                            <p class="subtitle is-6">App that shows countries of the world and the relation of visas
+                                with the rest of the countries, if you are registered you can add your nationalities and
+                                have a better view of your visas.
+                            </p>
+                            <h2 class="subtitle is-6">Tech Stack:</h2>
+                            <div class="project-icons has-text-centered">
+                                <i class="devicon-django-plain iconA"></i>
+                                <i class="devicon-postgresql-plain iconB"></i>
+                                <i class="devicon-python-plain iconA"></i>
+                                <i class="devicon-javascript-plain iconB"></i>
+                                <i class="devicon-html5-plain iconA"></i>
+                                <i class="devicon-bulma-plain iconB"></i>
+                                <i class="devicon-css3-plain iconA"></i>
+                                <i class="devicon-pandas-plain iconB"></i>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sectionA">
+        <div class="container">
+            <h1 class="title is-1">Skills</h1>
+            <div class="columns">
+                <div class="column">
+                    <h2 class="subtitle is-3">Frontend:</h2>
+                    <div class="icons columns is-multiline">
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-javascript-plain "></i>
+                            <p class="subtitle is-4 ">JavaScript</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-react-original"></i>
+                            <p class="subtitle is-4">React</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+                            <i class="devicon-html5-plain-wordmark"></i>
+                            <p class="subtitle is-4">HTML5</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+                            <i class="devicon-bulma-plain"></i>
+                            <p class="subtitle is-4">Bulma</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-css3-plain-wordmark"></i>
+                            <p class="subtitle is-4">CSS3</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-axios-plain-wordmark"></i>
+                            <p class="subtitle is-4">Axios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="subtitle is-3">Backtend:</h2>
+                    <div class="icons columns is-multiline">
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-nodejs-plain"></i>
+                            <p class="subtitle is-4">Node.js</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+
+                            <i class="devicon-nodemon-plain"></i>
+                            <p class="subtitle is-4">Nodemon</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+
+                            <i class="devicon-npm-original-wordmark"></i>
+                            <p class="subtitle is-4">npm</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+
+                            <i class="devicon-django-plain"></i>
+                            <p class="subtitle is-4">Django</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-mongodb-plain"></i>
+                            <p class="subtitle is-4">MongoDB</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-mongoose-original"></i>
+                            <p class="subtitle is-4">Mongoose</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+                            <i class="devicon-postgresql-plain"></i>
+                            <p class="subtitle is-4">PostgreSQL</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+                            <i class="devicon-python-plain"></i>
+                            <p class="subtitle is-4">Python</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-express-original"></i>
+                            <p class="subtitle is-4">Express</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+
+                    <h2 class="subtitle is-3">Others:</h2>
+                    <div class="icons columns is-multiline">
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-github-original"></i>
+                            <p class="subtitle is-4">GitHub</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-heroku-original"></i>
+                            <p class="subtitle is-4">Heroku</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+                            <i class="devicon-postman-plain"></i>
+                            <p class="subtitle is-4">Postman</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconB">
+                            <i class="devicon-vscode-plain"></i>
+                            <p class="subtitle is-4">VSCode</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-netlify-plain"></i>
+                            <p class="subtitle is-4">Netlify</p>
+                        </div>
+                        <div class="icon-div column is-half has-text-centered iconA">
+                            <i class="devicon-slack-plain"></i>
+                            <p class="subtitle is-4">Slack</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
         </div>
-        <div class="skills-section">
-            <h1>SKILLS</h1>
-            <p class="skill-p"></p>
-            
-            <i class="devicon-javascript-plain"></i> 
-            <i class="devicon-react-original"></i>
-            <i class="devicon-nodejs-plain"></i> 
-            <i class="devicon-nodemon-plain"></i>
-            <i class="devicon-npm-original-wordmark"></i>
-            <i class="devicon-html5-plain-wordmark"></i>
-
-            <i class="devicon-bulma-plain"></i>
-          
-            <i class="devicon-css3-plain-wordmark"></i>
-          
-            <i class="devicon-github-original"></i>
-          
-            <i class="devicon-django-plain"></i>
-          
-            <i class="devicon-heroku-original"></i>
-          
-            <i class="devicon-mongodb-plain"></i>
-          
-            <i class="devicon-mongoose-original"></i>
-          
-            <i class="devicon-postman-plain"></i>
-          
-            <i class="devicon-postgresql-plain"></i>
-          
-            <i class="devicon-python-plain"></i>
-          
-            <i class="devicon-vscode-plain"></i>
-            <i class="devicon-express-original"></i>
-
-            <i class="devicon-netlify-plain"></i>
-            
-            <i class="devicon-powershell-plain"></i>
-          
-            <i class="devicon-slack-plain"></i>
-          
-          
-        </div> -->
-    <section class="section">
-        <h1 class="title">More About Me</h1>
 
     </section>
 
-    <section class="section">
+    <section class="sectionB">
+        <div class="container">
+            <h1 class="title is-1">Hobbies</h1>
+            <div class="hobbies-list container columns">
+                <div class="hobbie column box">
+                    <p class="subtitle">I have a deep passion for literature, especially the mystery and fantasy genres. Immersing myself
+                        in intricate plots and fantastic worlds not only provides me with relaxation and fun, but also
+                        inspires my creativity and problem-solving skills. These stories feed my imagination and offer
+                        me new perspectives </p>
+                    <img class="image is-4by5" src="images/boooks.jpg">
+                </div>
+                <div class="hobbie column box">
+                    <img class="image is-4by5" src="images/EscapeRooms.jpg">
+                    <p class="subtitle">I am also passionate about escape rooms. I love the challenge of solving puzzles and working with
+                        a team to uncover clues and achieve a common goal. This hobby enhances my critical thinking,
+                        teamwork, and perseverance, which are valuable skills in both my personal and professional life.
+                        The excitement and satisfaction of escaping a room within the time limit are incredibly
+                        rewarding and keep me coming back for more.</p>
+
+                </div>
+                <div class="hobbie column box">
+                    <p class="subtitle">Traveling is another hobby that I am deeply passionate about. Exploring new places, cultures, and
+                        cuisines broadens my horizons and enriches my understanding of the world. Each journey provides
+                        unique experiences and memories, fostering a sense of adventure and curiosity. Traveling also
+                        offers fresh perspectives and inspiration, which I bring back to my work and personal projects,
+                        enhancing my creativity and problem-solving abilities.</p>
+                    <img class="image is-4by5" src="images/traveling.jpg">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionA">
         <div class="container">
             <h1 class="title">Contact Me</h1>
             <div class="contact-box">
                 <div class="contact-item">
                     <i class="fa-regular fa-envelope contact-icon"></i>
-                    <a href="mailto:melsan1706@gmail.com" class="contact-link">melsan1706@gmail.com</a>
+                    <a href="mailto:melsan1706@gmail.com" class="contact-link subtitle">melsan1706@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fa-brands fa-linkedin contact-icon"></i>
-                    <a href="https://www.linkedin.com/in/melanie-sanabria/" class="contact-link">melanie-sanabria</a>
+                    <a href="https://www.linkedin.com/in/melanie-sanabria/"
+                        class="contact-link subtitle">melanie-sanabria</a>
                 </div>
                 <div class="contact-item">
                     <i class="fa-brands fa-github contact-icon"></i>
-                    <a href="https://github.com/Melaniemsc" class="contact-link">Melaniemsc</a>
+                    <a href="https://github.com/Melaniemsc" class="contact-link subtitle">Melaniemsc</a>
                 </div>
             </div>
-        </div>
+
     </section>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
 </body>
